@@ -43,3 +43,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.adb.nonblocking_ffs=0 \
 	persist.adb.nonblocking_ffs=0 \
 	sys.usb.ffs.aio_compat=1
+	
+# Wi-Fi
+PRODUCT_PROPERTY_OVERRIDES += \
+	wifi.interface=wlan0 \
+	wifi.direct.interface=p2p-dev-wlan0
