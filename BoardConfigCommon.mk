@@ -97,9 +97,6 @@ TARGET_COPY_OUT_VENDOR := system/vendor
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/ramdisk/etc/fstab.samsungexynos7420
 
-# SECComp filters
-BOARD_SECCOMP_POLICY += $(COMMON_PATH)/seccomp
-
 # Wifi
 TARGET_USES_64_BIT_BCMDHD        := true
 BOARD_WLAN_DEVICE                := bcmdhd

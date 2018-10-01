@@ -159,11 +159,16 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl
     
 # Properties
--include $(LOCAL_PATH)/system_prop.mk
+-include $(COMMON_PATH)/system_prop.mk
 
 # RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
+
+# Seccomp filters
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/seccomp/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
+    $(COMMON_PATH)/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
 
 # Wifi
 PRODUCT_PACKAGES += \
