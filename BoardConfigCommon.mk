@@ -99,6 +99,9 @@ GREEN_LED_PATH := "/sys/class/leds/led_g/brightness"
 BLUE_LED_PATH := "/sys/class/leds/led_b/brightness"
 BACKLIGHT_PATH := "/sys/class/backlight/panel/brightness"
 
+# Networking
+TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE := true
+
 # Vendor separation
 TARGET_COPY_OUT_VENDOR := system/vendor
 
