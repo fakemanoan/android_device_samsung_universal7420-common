@@ -62,6 +62,10 @@ CHARGING_ENABLED_PATH := "/sys/class/power_supply/battery/batt_lp_charging"
 # Device Tree
 BOARD_USES_DT := true
 
+# Fingerprint
+TARGET_SEC_FP_CALL_NOTIFY_ON_CANCEL := true
+TARGET_SEC_FP_USES_PERCENTAGE_SAMPLES := true
+
 # Graphics
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 

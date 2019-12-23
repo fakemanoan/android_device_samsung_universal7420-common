@@ -64,6 +64,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_HOST_PACKAGES += \
     dtbhtoolExynos
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+	android.hardware.biometrics.fingerprint@2.1-service.samsung
+
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
