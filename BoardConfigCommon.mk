@@ -103,6 +103,10 @@ TARGET_COPY_OUT_VENDOR := system/vendor
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/ramdisk/etc/fstab.samsungexynos7420
 
+# Root extra folders
+BOARD_ROOT_EXTRA_FOLDERS += efs
+TARGET_FS_CONFIG_GEN := $(LOCAL_PATH)/config.fs
+
 # Wifi
 TARGET_USES_64_BIT_BCMDHD        := true
 BOARD_WLAN_DEVICE                := bcmdhd
