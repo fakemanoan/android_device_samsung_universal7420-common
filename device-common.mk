@@ -14,19 +14,29 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/universal7420-common
+COMMON_PATH := device/samsung/universal7420-common
 
 # Audio
 PRODUCT_PACKAGES += \
-    audio.a2dp.default \
-    audio.usb.default \
-    audio.r_submix.default \
-    audio.primary.universal7420_32 \
-    android.hardware.audio@2.0-impl:32 \
-    android.hardware.audio@2.0-service \
-    android.hardware.audio.effect@2.0-impl:32 \
-    android.hardware.audio.effect@2.0-service \
-    libtinycompress
+	audio.a2dp.default \
+	audio.usb.default \
+	audio.r_submix.default \
+	audio.primary.universal7420_32 \
+	android.hardware.audio@2.0-impl:32 \
+	android.hardware.audio@2.0-service \
+	android.hardware.audio.effect@2.0-impl:32 \
+	android.hardware.audio.effect@2.0-service \
+	libtinycompress
+    
+PRODUCT_COPY_FILES += \
+	$(COMMON_PATH)/configs/audio/mixer_paths_0.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/mixer_paths_0.xml \
+	$(COMMON_PATH)/configs/audio/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf \
+	$(COMMON_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
+	frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+	frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
+	frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
+	frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
+	frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
 # call the proprietary setup
 $(call inherit-product, vendor/samsung/universal7420-common/universal7420-common-vendor.mk)

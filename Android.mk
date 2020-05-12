@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/universal7420-common
+COMMON_PATH := device/samsung/universal7420-common
 
 ifeq ($(BOARD_VENDOR),samsung)
 ifneq ($(filter zerofltedv zerofltemtr zerofltespr zerofltetmo zerofltexx zeroltetmo zeroltexx zerofltebmc zeroltebmc zeroltecan zerofltecan, $(TARGET_DEVICE)),)

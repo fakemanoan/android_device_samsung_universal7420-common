@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/universal7420-common
+COMMON_PATH := device/samsung/universal7420-common
 
 # Include path
-TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
+TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
 # Architecture
 TARGET_ARCH := arm64
@@ -36,6 +36,7 @@ TARGET_NR_CPUS := 8
 # Audio
 AUDIOSERVER_MULTILIB := 32
 TARGET_AUDIOHAL_VARIANT := samsung
+USE_XML_AUDIO_POLICY_CONF := 1
 
 # Binder
 TARGET_USES_64_BIT_BINDER := true
