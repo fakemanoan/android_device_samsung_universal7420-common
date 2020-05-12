@@ -144,6 +144,11 @@ PRODUCT_COPY_FILES += \
 	$(COMMON_PATH)/configs/nfc/libnfc-sec.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec.conf \
 	$(COMMON_PATH)/configs/nfc/libnfc-brcm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf
     
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.0-impl \
+    android.hardware.health@2.0-service
+    
 # Memory
 PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl
