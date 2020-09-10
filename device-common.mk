@@ -141,6 +141,11 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
 	frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
+# HIDL
+PRODUCT_PACKAGES += \
+	libhidltransport \
+	libhwbinder
+
 # Keylayouts
 PRODUCT_COPY_FILES += \
 	$(COMMON_PATH)/configs/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl \
@@ -244,7 +249,7 @@ PRODUCT_PACKAGES += \
 	android.hardware.sensors@1.0-impl.samsung
 
 # Soong
-PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
 
 # Stagefright-shims
 PRODUCT_PACKAGES += \
