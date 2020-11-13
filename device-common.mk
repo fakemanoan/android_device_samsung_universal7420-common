@@ -167,6 +167,10 @@ PRODUCT_PACKAGES += \
 # Properties
 -include $(COMMON_PATH)/system_prop.mk
 
+# Power
+PRODUCT_PACKAGES += \
+	android.hardware.power@1.0-service.exynos
+
 # RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
