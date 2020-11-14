@@ -174,6 +174,9 @@ PRODUCT_PACKAGES += \
     
 # Properties
 -include $(COMMON_PATH)/system_prop.mk
+	
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 
 # Power
 PRODUCT_PACKAGES += \
