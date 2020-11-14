@@ -179,6 +179,20 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	android.hardware.power@1.0-service.exynos
 
+# Radio
+PRODUCT_PACKAGES += \
+	libxml2 \
+	libprotobuf-cpp-full \
+	libreference-ril \
+	libril \
+	libsecril-client \
+	libsecril-client-sap \
+	libsecnativefeature \
+	android.hardware.radio@1.0 \
+	android.hardware.radio.deprecated@1.0 \
+	modemloader \
+	rild
+
 # RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl

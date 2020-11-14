@@ -105,6 +105,9 @@ TARGET_COPY_OUT_VENDOR := system/vendor
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/ramdisk/etc/fstab.samsungexynos7420
 
+# Radio
+BOARD_PROVIDES_LIBRIL := true
+
 # Root extra folders
 BOARD_ROOT_EXTRA_FOLDERS += efs
 TARGET_FS_CONFIG_GEN := $(LOCAL_PATH)/config.fs
