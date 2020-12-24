@@ -73,6 +73,10 @@ PRODUCT_PACKAGES += \
 # DTB
 PRODUCT_HOST_PACKAGES += \
     dtbhtoolExynos
+	
+# FastCharge
+PRODUCT_PACKAGES += \
+    vendor.lineage.fastcharge@1.0-service.samsung
 
 # Fingerprint
 PRODUCT_PACKAGES += \
