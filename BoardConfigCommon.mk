@@ -72,6 +72,19 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
 CHARGING_ENABLED_PATH := "/sys/class/power_supply/battery/batt_lp_charging"
 
+ #
+# Hardware Classes
+#
+## LineageOS HW
+JAVA_SOURCE_OVERLAYS := \
+    org.lineageos.hardware|hardware/samsung/lineagehw|**/*.java \
+    org.lineageos.hardware|device/samsung/universal7420-common/lineagehw|**/*.java
+
+#
+# Renderscript
+#
+BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a53.a57
+BOARD_OVERRIDE_RS_CPU_VARIANT_64 := cortex-a57
 # Device Tree
 BOARD_USES_DT := true
 
@@ -209,6 +222,9 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 # Vendor separation
 TARGET_COPY_OUT_VENDOR := system/vendor
 
+# LIBHWJPEG
+TARGET_USES_UNIVERSAL_LIBHWJPEG := true
+   
 # WFD
 BOARD_USES_WFD := true
 
