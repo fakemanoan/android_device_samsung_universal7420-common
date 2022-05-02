@@ -280,6 +280,12 @@ PRODUCT_PACKAGES += \
 	android.hardware.wifi@1.0-service.legacy \
 	TetheringConfigOverlay \
 	WifiOverlay
+	
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.manager@1.0 \
+    libhidltransport \
+    libhwbinder
 
 # call Samsung LSI board support package
 $(call inherit-product, hardware/samsung_slsi/exynos5/exynos5.mk)
