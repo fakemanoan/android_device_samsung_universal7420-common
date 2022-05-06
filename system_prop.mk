@@ -22,6 +22,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.arch=exynos7420
 
 #
+# BPF
+#
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.kernel.ebpf.supported=false
+
+#
+# Charger
+#
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.charger.enable_suspend=true
+
+#
 # Dalvik
 #
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -32,7 +44,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	dalvik.vm.heapsize=512m \
 	dalvik.vm.heaptargetutilization=0.75 \
 	dalvik.vm.heapminfree=512k \
-	dalvik.vm.heapmaxfree=8m
+	dalvik.vm.heapmaxfree=8m \
+	dalvik.vm.dex2oat64.enabled=true
 
 #
 # Ril
@@ -94,6 +107,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	af.fast_track_multiplier=1 \
 	audio_hal.force_voice_config=wide
+
+#
+# SOC
+#
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.soc.manufacturer=Samsung \
+	ro.soc.model=Exynos 7420
 
 #
 # Storage

@@ -93,8 +93,7 @@ PRODUCT_PACKAGES += \
 
 # Configstore
 PRODUCT_PACKAGES += \
-	android.hardware.configstore@1.0-impl \
-	android.hardware.configstore@1.0-service
+	disable_configstore
 
 # Debugging
 -include $(LOCAL_PATH)/system_prop_debug.mk
@@ -153,7 +152,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-	android.hardware.light@2.0-service.samsung
+	android.hardware.light-service.samsung
 
 # Livedisplay
 PRODUCT_PACKAGES += \
@@ -261,8 +260,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-	android.hardware.vibrator@1.0-impl \
-	android.hardware.vibrator@1.0-service
+	android.hardware.vibrator-service.samsung
 
 # Wifi
 PRODUCT_PACKAGES += \
