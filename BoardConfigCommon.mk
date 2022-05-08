@@ -146,6 +146,7 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
 BOARD_KERNEL_SEPARATED_DT := true
+TARGET_KERNEL_CLANG_COMPILE := false
 TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
 
 # Keymaster
