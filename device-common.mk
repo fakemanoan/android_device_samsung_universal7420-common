@@ -123,7 +123,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	android.hardware.graphics.allocator@2.0-impl \
 	android.hardware.graphics.allocator@2.0-service \
-	android.hardware.graphics.composer@2.1-service \
+	android.hardware.graphics.composer@2.1-impl \
 	android.hardware.graphics.mapper@2.0-impl \
 	gralloc.exynos5 \
 	hwcomposer.exynos5 \
@@ -217,6 +217,10 @@ PRODUCT_PACKAGES += \
 # RenderScript
 PRODUCT_PACKAGES += \
 	android.hardware.renderscript@1.0-impl
+
+# VNDK
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v30/arm/arch-arm-armv7-a-neon/shared/vndk-core/android.hardware.light-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.light-V1-ndk_platform.so
 
 # Ril - Shim
 PRODUCT_PACKAGES += \

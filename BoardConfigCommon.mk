@@ -19,6 +19,12 @@ LOCAL_PATH := device/samsung/universal7420-common
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
+# VNDK VERSION
+BOARD_VNDK_VERSION := current
+
+# Dedupe VNDK libraries with identical core variants.
+TARGET_VNDK_USE_CORE_VARIANT := true
+
 BUILD_TOP := $(shell pwd)
 
 # Include path
@@ -43,6 +49,8 @@ TARGET_NR_CPUS := 8
 # Kernel
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Audio
 TARGET_AUDIOHAL_VARIANT := samsung
