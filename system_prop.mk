@@ -102,6 +102,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sf.lcd_density=640 \
 	sys.use_fifo_ui=1
 
+# SurfaceFlinger
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+
+
+
 #
 # Audio
 #
