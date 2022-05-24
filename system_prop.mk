@@ -121,3 +121,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.adb.nonblocking_ffs=0 \
 	persist.adb.nonblocking_ffs=0 \
 	sys.usb.ffs.aio_compat=1
+
+
+# Bpf
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.kernel.ebpf.supported=false
