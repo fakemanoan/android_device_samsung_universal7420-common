@@ -126,3 +126,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Bpf
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.kernel.ebpf.supported=false
+#
+# SOC
+#
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.soc.manufacturer=Samsung \
+	ro.soc.model=Exynos 7420
