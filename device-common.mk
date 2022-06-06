@@ -69,8 +69,7 @@ PRODUCT_PACKAGES += \
 	tinymix \
 	android.hardware.audio.service \
 	android.hardware.audio@7.0-impl:32 \
-	android.hardware.audio.effect@7.0-impl:32 \
-	android.hardware.audio.effect@2.0-service:32 \
+	android.hardware.audio.effect@7.0-impl:32
 
 PRODUCT_COPY_FILES += \
 	frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
@@ -252,8 +251,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-	android.hardware.vibrator@1.0-impl \
-	android.hardware.vibrator@1.0-service
+	android.hardware.vibrator-service.samsung
 
 # Wifi
 PRODUCT_PACKAGES += \
