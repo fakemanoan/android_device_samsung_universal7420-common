@@ -203,7 +203,8 @@ PRODUCT_PACKAGES += \
 	android.hardware.radio@1.0 \
 	android.hardware.radio.deprecated@1.0 \
 	modemloader \
-	rild
+	rild \
+	secril_config_svc
 
 # Ramdisk
 PRODUCT_PACKAGES += \
