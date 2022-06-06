@@ -153,7 +153,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-	android.hardware.light@2.0-service.samsung
+	android.hardware.light-service.samsung
 
 # Livedisplay
 PRODUCT_PACKAGES += \
@@ -241,10 +241,6 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 # Stagefright-shims
 PRODUCT_PACKAGES += \
 	libstagefright_shim
-
-# Touch
-#PRODUCT_PACKAGES += \
-#	vendor.lineage.touch@1.0-service.samsung
 
 # Trust
 PRODUCT_PACKAGES += \
