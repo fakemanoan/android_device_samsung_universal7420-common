@@ -125,3 +125,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Bpf
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.kernel.ebpf.supported=false
+
+# SurfaceFlinger
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.surface_flinger.max_frame_buffer_acquired_buffers=3
