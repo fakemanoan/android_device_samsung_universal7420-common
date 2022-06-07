@@ -187,10 +187,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Power
 PRODUCT_PACKAGES += \
-	android.hardware.power-service.samsung-libperfmgr
-
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+	android.hardware.power@1.0-service.exynos
 
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
@@ -238,12 +235,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	android.hardware.sensors@1.0-impl.samsung
 
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(COMMON_PATH) \
-    hardware/google/interfaces \
-    hardware/google/pixel \
-    hardware/samsung/aidl/power-libperfmgr
+# Soong
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 # Stagefright-shims
 PRODUCT_PACKAGES += \
