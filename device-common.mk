@@ -187,7 +187,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Power
 PRODUCT_PACKAGES += \
-	android.hardware.power@1.0-service.exynos
+	android.hardware.power@1.0-service.universal7420
 
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
