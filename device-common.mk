@@ -96,7 +96,8 @@ PRODUCT_PACKAGES += \
 
 # ConfigStore
 PRODUCT_PACKAGES += \
-    disable_configstore
+    android.hardware.configstore@1.0-impl \
+    android.hardware.configstore@1.0-service
 
 # Debugging
 -include $(LOCAL_PATH)/system_prop_debug.mk
@@ -130,8 +131,6 @@ PRODUCT_PACKAGES += \
 	android.hardware.graphics.allocator@2.0-service \
 	android.hardware.graphics.composer@2.1-service \
 	android.hardware.graphics.mapper@2.0-impl \
-	gralloc.exynos5 \
-	hwcomposer.exynos5 \
 	libfimg \
 	libhwc2on1adapter \
 	libion
@@ -147,6 +146,7 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
+	keystore.exynos5 \
 	android.hardware.keymaster@3.0-impl \
 	android.hardware.keymaster@3.0-service
 
@@ -172,6 +172,12 @@ PRODUCT_COPY_FILES += \
 	frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
 	frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
 
+# Mobicore
+PRODUCT_PACKAGES += \
+    mcDriverDaemon \
+    libMcClient \
+    libMcRegistry
+	
 # NFC
 PRODUCT_PACKAGES += \
 	libnfc-nci \
@@ -255,6 +261,10 @@ PRODUCT_PACKAGES += \
 # Vibrator
 PRODUCT_PACKAGES += \
 	android.hardware.vibrator-service.samsung
+
+# VNDK
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v30/arm/arch-arm-armv7-a-neon/shared/vndk-core/android.hardware.light-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.light-V1-ndk_platform.so
 
 # Wifi
 PRODUCT_PACKAGES += \
