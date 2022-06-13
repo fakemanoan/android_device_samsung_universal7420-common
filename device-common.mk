@@ -96,8 +96,7 @@ PRODUCT_PACKAGES += \
 
 # ConfigStore
 PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.0-impl \
-    android.hardware.configstore@1.0-service
+    disable_configstore
 
 # Debugging
 -include $(LOCAL_PATH)/system_prop_debug.mk
@@ -146,7 +145,6 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-	keystore.exynos5 \
 	android.hardware.keymaster@3.0-impl \
 	android.hardware.keymaster@3.0-service
 
@@ -264,7 +262,8 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v30/arm/arch-arm-armv7-a-neon/shared/vndk-core/android.hardware.light-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.light-V1-ndk_platform.so
+    prebuilts/vndk/v30/arm/arch-arm-armv8-a-neon/shared/vndk-core/android.hardware.light-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.light-V1-ndk_platform.so \
+	prebuilts/vndk/v30/arm/arch-arm64-armv8-a-neon/shared/vndk-core/android.hardware.light-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.light-V1-ndk_platform.so
 
 # Wifi
 PRODUCT_PACKAGES += \
