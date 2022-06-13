@@ -16,6 +16,12 @@
 
 LOCAL_PATH := device/samsung/universal7420-common
 
+# VNDK VERSION
+BOARD_VNDK_VERSION := current
+
+# Dedupe VNDK libraries with identical core variants.
+TARGET_VNDK_USE_CORE_VARIANT := true
+
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
@@ -206,6 +212,9 @@ BOARD_USES_VDS_BGRA8888 := true
 BOARD_USES_VIRTUAL_DISPLAY_DECON_EXT_WB := false
 BOARD_VIRTUAL_DISPLAY_DISABLE_IDMA_G0 := false
 BOARD_USES_CEC := true
+
+# DRM
+TARGET_ENABLE_MEDIADRM_64 := true
 
 # Use these flags if the board has a ext4 partition larger than 2gb
 BOARD_HAS_LARGE_FILESYSTEM := true
