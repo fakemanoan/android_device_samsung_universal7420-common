@@ -235,7 +235,8 @@ PRODUCT_PACKAGES += \
 # Ril - Shim
 PRODUCT_PACKAGES += \
 	libcutils_shim \
-	libcamera_shim
+	libcamera_shim \
+	mediaserver.rc
 
 # SamsungDoze
 PRODUCT_PACKAGES += \
