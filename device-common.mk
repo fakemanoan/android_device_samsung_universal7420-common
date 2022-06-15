@@ -124,6 +124,10 @@ PRODUCT_PACKAGES += \
 	android.hardware.gnss@1.0-impl.universal7420 \
 	gpsd_shim
 
+#IR
+PRODUCT_PACKAGES += \
+	android.hardware.ir@1.0-service.samsung
+
 # Graphics
 PRODUCT_PACKAGES += \
 	android.hardware.graphics.allocator@2.0-impl \
