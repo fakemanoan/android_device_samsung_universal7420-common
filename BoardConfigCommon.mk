@@ -74,7 +74,6 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
 CHARGING_ENABLED_PATH := "/sys/class/power_supply/battery/batt_lp_charging"
 
-
 # Recovery
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/ramdisk/fstab.samsungexynos7420.recovery
 
@@ -144,6 +143,7 @@ TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
 
 SELINUX_IGNORE_NEVERALLOWS := true
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
 # Keymaster
 BOARD_USES_TRUST_KEYMASTER := true
 
