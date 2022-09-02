@@ -261,7 +261,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Stagefright-shims
 PRODUCT_PACKAGES += \
-	libstagefright_shim
+	libstagefright_shim \
+	mediaserver.rc
 
 # Touch features
 PRODUCT_PACKAGES += \
