@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017-2018 TeamNexus
+ * Copyright (C) 2017 TeamNexus
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -51,5 +51,5 @@ public:
 	static const char KEY_SUPPORTED_RT_HDR[];
 	static const char KEY_RT_HDR[];
 };
-	
+
 };
