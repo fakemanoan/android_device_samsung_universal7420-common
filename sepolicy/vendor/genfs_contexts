@@ -66,7 +66,8 @@ genfscon sysfs /kernel/hmp                                          u:object_r:s
 genfscon sysfs /firmware/devicetree/base/cpus/hmp/down_threshold    u:object_r:sysfs_socinfo:s0
 
 # Decon
-genfscon sysfs /devices/13960000.decon_f  u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/13930000.decon_f  u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/13950000.decon_e  u:object_r:sysfs_graphics:s0
 genfscon sysfs /devices/13e10000.decon_s  u:object_r:sysfs_graphics:s0
 genfscon sysfs /devices/13e20000.decon_t  u:object_r:sysfs_graphics:s0
 
@@ -80,7 +81,7 @@ genfscon sysfs /class/input_booster/head    u:object_r:sysfs_input:s0
 genfscon sysfs /class/input_booster/tail    u:object_r:sysfs_input:s0
 
 # Input devices
-genfscon sysfs /devices/gpio_keys/input/input10                                   u:object_r:sysfs_input:s0
+genfscon sysfs /devices/gpio_keys.30/input/input10                                   u:object_r:sysfs_input:s0
 genfscon sysfs /devices/14e10000.hsi2c/i2c-4/4-0048/input                         u:object_r:sysfs_input:s0
 genfscon sysfs /devices/14d20000.spi/spi_master/spi0/spi0.0/arizona-extcon/input  u:object_r:sysfs_input:s0
 
