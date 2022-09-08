@@ -72,8 +72,8 @@ genfscon sysfs /devices/13e10000.decon_s  u:object_r:sysfs_graphics:s0
 genfscon sysfs /devices/13e20000.decon_t  u:object_r:sysfs_graphics:s0
 
 # Hall
-genfscon sysfs /devices/certify_hall/input  u:object_r:sysfs_hall:s0
-genfscon sysfs /devices/hall/input/input11  u:object_r:sysfs_hall:s0
+genfscon sysfs /devices/certify_hall.28/input  u:object_r:sysfs_hall:s0
+genfscon sysfs /devices/hall.27/input/input11  u:object_r:sysfs_hall:s0
 
 # Input booster
 genfscon sysfs /class/input_booster/level   u:object_r:sysfs_input:s0
