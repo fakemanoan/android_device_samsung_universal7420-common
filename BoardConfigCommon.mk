@@ -90,7 +90,7 @@ TARGET_SEC_FP_CALL_CANCEL_ON_ENROLL_COMPLETION := true
 TARGET_SEC_FP_USES_PERCENTAGE_SAMPLES := true
 
 # Gralloc
-BOARD_USES_EXYNOS5_COMMON_GRALLOC := true
+BOARD_USES_EXYNOS7420_GRALLOC := true
 
 # Graphics
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
@@ -106,6 +106,12 @@ BOARD_USE_NON_CACHED_GRAPHICBUFFER := true
 # (G)SCALER
 BOARD_USES_SCALER := true
 
+# Graphics
+USE_OPENGL_RENDERER := true
+
+# Gralloc
+TARGET_USES_GRALLOC1_ADAPTER := true
+
 # HIDL
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
@@ -118,6 +124,9 @@ BOARD_HDMI_INCAPABLE := true
 
 # HWCServices - requires framework support
 # BOARD_USES_HWC_SERVICES := true
+
+# Mixer
+BOARD_USE_BGRA_8888 := true
 
 #  ION
 TARGET_USES_ION := true
@@ -210,6 +219,13 @@ BOARD_USES_CEC := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
+
+#
+# Hardware Classes
+#
+## LineageOS HW
+JAVA_SOURCE_OVERLAYS := \
+    org.lineageos.hardware|hardware/samsung/lineagehw|**/*.java \
 
 # Vendor separation
 TARGET_COPY_OUT_VENDOR := system/vendor
