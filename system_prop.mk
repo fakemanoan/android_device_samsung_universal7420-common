@@ -78,16 +78,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #
 PRODUCT_PROPERTY_OVERRIDES += \
 	debug.hwc.force_gpu=0 \
-	debug.sf.latch_unsignaled=1
+	debug.sf.latch_unsignaled=1 \
+	debug.hwc.winupdate=1 \
+	debug.sf.disable_backpressure=1
 
 #
 # Graphics
 #
 PRODUCT_PROPERTY_OVERRIDES += \
+	ro.hardware.egl=mali \
 	ro.opengles.version=196610 \
-	debug.hwui.use_buffer_age=false \
 	ro.sf.lcd_density=640 \
-	sys.use_fifo_ui=1
+	ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
 #
 # Audio
