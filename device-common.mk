@@ -124,7 +124,8 @@ PRODUCT_PACKAGES += \
 
 # GNSS
 PRODUCT_PACKAGES += \
-	android.hardware.gnss@1.0-impl.universal7420
+	android.hardware.gnss@1.0-impl.universal7420 \
+	android.hardware.gnss@1.0-service
 
 # Graphics
 PRODUCT_PACKAGES += \
@@ -150,7 +151,7 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-service.software
+	android.hardware.gatekeeper@1.0-service.software
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -244,7 +245,8 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-	android.hardware.sensors@1.0-impl.samsung
+	android.hardware.sensors@1.0-impl.samsung \
+	android.hardware.sensors@1.0-service
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
