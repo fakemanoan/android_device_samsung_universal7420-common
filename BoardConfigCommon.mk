@@ -105,12 +105,18 @@ BOARD_HDMI_INCAPABLE := true
 # HWComposer
 BOARD_USES_VPP := true
 BOARD_HDMI_INCAPABLE := true
+TARGET_USES_HWC2 := true
+TARGET_USES_GRALLOC1 := true
+BOARD_USES_DECON_64BIT_ADDRESS := true
+
+# ION
+TARGET_USES_ION := true
+
+# Graphics
+USE_OPENGL_RENDERER := true
 
 # HWCServices - requires framework support
-# BOARD_USES_HWC_SERVICES := true
-
-#  ION
-TARGET_USES_ION := true
+BOARD_USES_HWC_SERVICES := true
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
@@ -131,6 +137,9 @@ TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
 
 # Keymaster
 BOARD_USES_TRUST_KEYMASTER := true
+
+# HWUI
+HWUI_COMPILE_FOR_PERF := true
 
 # Mediaserver-shim
 TARGET_LD_SHIM_LIBS += \
