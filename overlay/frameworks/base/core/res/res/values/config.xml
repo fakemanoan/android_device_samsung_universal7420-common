@@ -383,4 +383,7 @@ Add a comment to this line
 	 For this time after the screen turns on, the Power Manager
 	 will not debounce light sensor readings -->
     <integer name="config_lightSensorWarmupTime">200</integer>
+    
+    <!-- The device supports freeform window management -->
+    <bool name="config_freeformWindowManagement">true</bool>
 </resources>
