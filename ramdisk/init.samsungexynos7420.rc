@@ -312,6 +312,8 @@ on fs
 # Permissions for EFS
     chown radio system /efs
     chmod 0771 /efs
+    
+    restorecon_recursive /efs
 
 # Fingerprint
     mkdir /dev/validity 0770 system system
