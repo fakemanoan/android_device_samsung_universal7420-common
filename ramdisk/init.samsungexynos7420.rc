@@ -280,7 +280,7 @@ on boot
 on fs
     mount_all /fstab.samsungexynos7420
     # Enable swap
-    swapon_all /fstab.samsungexynos7580
+    swapon_all /fstab.samsungexynos7420
 
 # Permissions for TouchScreen
     chown system radio /sys/class/sec/tsp/cmd
