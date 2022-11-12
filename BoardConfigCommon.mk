@@ -144,6 +144,9 @@ TARGET_SLSI_VARIANT := bsp
 # Radio
 BOARD_PROVIDES_LIBRIL := true
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/ramdisk/fstab.samsungexynos7420.recovery
+
 # Root extra folders
 BOARD_ROOT_EXTRA_FOLDERS += efs
 TARGET_FS_CONFIG_GEN := $(LOCAL_PATH)/config.fs
