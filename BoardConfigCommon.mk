@@ -21,6 +21,9 @@ BUILD_BROKEN_DUP_RULES := true
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
+# Exclude AudioFX
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
