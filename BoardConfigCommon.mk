@@ -135,6 +135,9 @@ BOARD_USES_TRUST_KEYMASTER := true
 TARGET_LD_SHIM_LIBS += \
     /system/bin/mediaserver|/vendor/lib/libstagefright_shim.so
 
+# HIDL
+PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
+
 # Networking
 TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE := true
 
