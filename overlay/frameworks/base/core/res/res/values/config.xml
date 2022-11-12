@@ -238,11 +238,6 @@
     <!-- Whether UI for multi user should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
 
-    <!-- Safe headphone volume index. When music stream volume is below this index
-         the SPL on headphone output is compliant to EN 60950 requirements for portable music
-         players. -->
-    <integer name="config_safe_media_volume_index">17</integer>
-
     <!-- Configure mobile tcp buffer sizes in the form:
          rat-name:rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max
          If no value is found for the rat-name in use, the system default will be applied.
