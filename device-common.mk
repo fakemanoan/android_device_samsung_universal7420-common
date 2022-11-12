@@ -167,7 +167,7 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-service.software
+	android.hardware.gatekeeper@1.0-service.software
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -207,8 +207,8 @@ PRODUCT_PACKAGES += \
 
 # OMX
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-impl \
-    android.hardware.media.omx@1.0-service
+	android.hardware.media.omx@1.0-impl \
+	android.hardware.media.omx@1.0-service
     
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -272,10 +272,10 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/google/interfaces \
-    hardware/google/pixel \
-    hardware/samsung/aidl/power-libperfmgr
+	$(LOCAL_PATH) \
+	hardware/google/interfaces \
+	hardware/google/pixel \
+	hardware/samsung/aidl/power-libperfmgr
 
 # Stagefright-shims
 PRODUCT_PACKAGES += \
