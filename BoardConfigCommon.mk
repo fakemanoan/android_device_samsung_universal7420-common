@@ -49,9 +49,6 @@ TARGET_AUDIOHAL_VARIANT := samsung
 USE_XML_AUDIO_POLICY_CONF := 1
 AUDIOSERVER_MULTILIB := 32
 
-# Binder
-TARGET_USES_64_BIT_BINDER := true
-
 # Bluetooth
 BOARD_CUSTOM_BT_CONFIG := $(LOCAL_PATH)/configs/bluetooth/libbt_vndcfg.txt
 BOARD_HAVE_BLUETOOTH := true
