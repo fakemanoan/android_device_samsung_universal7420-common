@@ -229,7 +229,12 @@ PRODUCT_PACKAGES += \
 	init.power.rc \
 	init.samsungexynos7420.rc \
 	init.samsungexynos7420.usb.rc \
-	init.wifi.rc
+	init.wifi.rc \
+	fstab.samsungexynos7420 \
+	init.baseband.rc \
+	init.gps.rc \
+	init.zerofltexx.rc \
+	ueventd.samsungexynos7420.rc
 
 # RenderScript
 PRODUCT_PACKAGES += \
