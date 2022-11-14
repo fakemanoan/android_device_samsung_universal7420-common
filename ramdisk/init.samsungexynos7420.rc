@@ -23,6 +23,9 @@ on init
     symlink /storage/usbdisk /mnt/usbdisk
 
     symlink /data/app /factory
+        
+    symlink /dev/block/platform/15570000.ufs/by-name/STEADY /dev/block/steady
+    symlink /dev/block/platform/15570000.ufs/by-name/PERSISTENT /dev/block/persistent
 
 on post-fs-data
     setprop vold.post_fs_data_done 1
