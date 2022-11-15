@@ -159,6 +159,7 @@ PRODUCT_PACKAGES += \
 	libhdmi \
 	libhwcutils \
 	libhwjpeg \
+	libstagefrighthw \
 	libion_exynos \
 	libmpp
 	
