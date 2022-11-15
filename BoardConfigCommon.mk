@@ -105,18 +105,27 @@ BOARD_HDMI_INCAPABLE := true
 # HWComposer
 BOARD_USES_VPP := true
 BOARD_HDMI_INCAPABLE := true
-TARGET_USES_HWC2 := true
 TARGET_USES_GRALLOC1 := true
-BOARD_USES_DECON_64BIT_ADDRESS := true
 
 # ION
 TARGET_USES_ION := true
+
+# Renderscript
+BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a53.a57
+BOARD_OVERRIDE_RS_CPU_VARIANT_64 := cortex-a57
+
+#
+# Hardware Classes
+#
+## LineageOS HW
+JAVA_SOURCE_OVERLAYS := \
+    org.lineageos.hardware|hardware/samsung/lineagehw|**/*.java \
 
 # Graphics
 USE_OPENGL_RENDERER := true
 
 # HWCServices - requires framework support
-BOARD_USES_HWC_SERVICES := true
+#BOARD_USES_HWC_SERVICES := true
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
@@ -209,7 +218,7 @@ BOARD_USES_DEFAULT_CSC_HW_SCALER := true
 BOARD_USE_DEINTERLACING_SUPPORT := true
 BOARD_USES_SCALER_M2M1SHOT := true
 BOARD_USES_VDS_BGRA8888 := true
-# BOARD_USES_VIRTUAL_DISPLAY := true  -- depends on platform changes
+# BOARD_USES_VIRTUAL_DISPLAY := true
 BOARD_USES_VIRTUAL_DISPLAY_DECON_EXT_WB := false
 BOARD_VIRTUAL_DISPLAY_DISABLE_IDMA_G0 := false
 BOARD_USES_CEC := true
