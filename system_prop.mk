@@ -56,7 +56,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # OMX / Media
 #
 PRODUCT_PROPERTY_OVERRIDES += \
-	debug.stagefright.ccodec=0
+	debug.stagefright.ccodec=0 \
+	debug.stagefright.omx_default_rank=0 \
+	debug.stagefright.omx_default_rank.sw-audio=1
 
 #
 # Miracast (Wireless Display)
