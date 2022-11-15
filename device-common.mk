@@ -147,7 +147,21 @@ PRODUCT_PACKAGES += \
 	hwcomposer.exynos5 \
 	libfimg \
 	libhwc2on1adapter \
-	libion
+	libion \
+	libcsc \
+	libexynosdisplay \
+	libexynosgscaler \
+	libExynosHWCService \
+	libexynosscaler \
+	libexynosutils \
+	libexynosv4l2 \
+	libfimg \
+	libhdmi \
+	libhwcutils \
+	libhwjpeg \
+	libion_exynos \
+	libmpp
+	
 
 # Health
 PRODUCT_PACKAGES += \
