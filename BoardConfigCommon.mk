@@ -66,7 +66,6 @@ TARGET_NO_BOOTLOADER := true
 
 # Charger
 WITH_LINEAGE_CHARGER := false
-BACKLIGHT_PATH := /sys/devices/13900000.dsim/backlight/panel/brightness
 BOARD_BATTERY_DEVICE_NAME := battery
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
@@ -75,9 +74,14 @@ CHARGING_ENABLED_PATH := "/sys/class/power_supply/battery/batt_lp_charging"
 # Device Tree
 BOARD_USES_DT := true
 
+# Mixer
+BOARD_USE_BGRA_8888 := true
+
 # FIMG2D
 BOARD_USES_SKIA_FIMGAPI := true
 BOARD_USES_FIMGAPI_V5X := true
+BOARD_USES_NEON_BLITANTIH := true
+BOARD_USES_FIMGAPI_V4L2 := false
 
 # Fingerprint
 TARGET_SEC_FP_CALL_NOTIFY_ON_CANCEL := true
@@ -126,6 +130,12 @@ USE_OPENGL_RENDERER := true
 
 # HWCServices - requires framework support
 BOARD_USES_HWC_SERVICES := true
+
+# LED
+RED_LED_PATH := "/sys/class/leds/led_r/brightness"
+GREEN_LED_PATH := "/sys/class/leds/led_g/brightness"
+BLUE_LED_PATH := "/sys/class/leds/led_b/brightness"
+BACKLIGHT_PATH := "/sys/class/backlight/panel/brightness"
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
