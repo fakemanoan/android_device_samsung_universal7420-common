@@ -148,6 +148,7 @@ PRODUCT_PACKAGES += \
 	libfimg \
 	libhwc2on1adapter \
 	libion \
+	libbfqio \
 	libcsc \
 	libexynosdisplay \
 	libexynosgscaler \
