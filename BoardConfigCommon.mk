@@ -118,13 +118,6 @@ TARGET_USES_ION := true
 BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a53.a57
 BOARD_OVERRIDE_RS_CPU_VARIANT_64 := cortex-a57
 
-#
-# Hardware Classes
-#
-## LineageOS HW
-JAVA_SOURCE_OVERLAYS := \
-    org.lineageos.hardware|hardware/samsung/lineagehw|**/*.java \
-
 # Graphics
 USE_OPENGL_RENDERER := true
 
