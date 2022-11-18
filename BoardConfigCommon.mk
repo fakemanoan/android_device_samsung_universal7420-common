@@ -121,7 +121,7 @@ BOARD_OVERRIDE_RS_CPU_VARIANT_64 := cortex-a57
 USE_OPENGL_RENDERER := true
 
 # HWCServices - requires framework support
-BOARD_USES_HWC_SERVICES := true
+# BOARD_USES_HWC_SERVICES := true
 
 # LED
 RED_LED_PATH := "/sys/class/leds/led_r/brightness"
