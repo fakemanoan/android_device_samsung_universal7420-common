@@ -73,6 +73,8 @@ PRODUCT_PACKAGES += \
 	android.hardware.audio.service \
 	android.hardware.audio@7.0-impl:32 \
 	android.hardware.audio.effect@7.0-impl:32
+	
+TARGET_EXCLUDES_AUDIOFX := true
 
 PRODUCT_COPY_FILES += \
 	frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
