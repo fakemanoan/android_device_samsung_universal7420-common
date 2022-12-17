@@ -14,6 +14,11 @@
 # limitations under the License.
 #
 
+# Audio
+PRODUCT_PROPERTY_OVERRIDES += \
+	af.fast_track_multiplier=1 \
+	audio_hal.force_voice_config=wide
+
 # Board
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.chipname=exynos7420 \
@@ -30,10 +35,35 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	dalvik.vm.heapminfree=512k \
 	dalvik.vm.heapmaxfree=8m
 	
+# Graphics
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.opengles.version=196610 \
+	ro.sf.lcd_density=560 
+	
+# NFC
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.nfc.sec_hal=true \
+	ro.nfc.fw_dl_on_boot=false
+	
 # Vendor Security Patch Level
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.lineage.build.vendor_security_patch=2019-01-01
-	
+
+# Ril
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.radio.add_power_save=1 \
+	persist.radio.apm_sim_not_pwdn=1 \
+	rild.libpath=/system/vendor/lib64/libsec-ril.so \
+	rild.libpath2=/system/vendor/lib64/libsec-ril-dsds.so \
+	telephony.lteOnGsmDevice=1 \
+	telephony.lteOnCdmaDevice=0 \
+	ro.telephony.default_network=9 \
+	ro.use_data_netmgrd=false \
+	persist.data.netmgrd.qos.enable=false \
+	ro.ril.hsxpa=1 \
+	ro.ril.telephony.mqanelements=6 \
+	ro.ril.gprsclass=10
+
 # Storage
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sys.sdcardfs=1
@@ -48,3 +78,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	wifi.interface=wlan0 \
 	wifi.direct.interface=p2p-dev-wlan0
+	
+	
