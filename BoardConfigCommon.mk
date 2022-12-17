@@ -68,6 +68,12 @@ TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
+# LED
+RED_LED_PATH := "/sys/class/leds/led_r/brightness"
+GREEN_LED_PATH := "/sys/class/leds/led_g/brightness"
+BLUE_LED_PATH := "/sys/class/leds/led_b/brightness"
+BACKLIGHT_PATH := "/sys/class/backlight/panel/brightness"
+
 # Vendor separation
 TARGET_COPY_OUT_VENDOR := system/vendor
 
