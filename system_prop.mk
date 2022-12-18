@@ -45,6 +45,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.nfc.sec_hal=true \
 	ro.nfc.fw_dl_on_boot=false
 	
+# OMX
+PRODUCT_PROPERTY_OVERRIDES += \
+	debug.stagefright.ccodec=0
+	
 # Vendor Security Patch Level
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.lineage.build.vendor_security_patch=2019-01-01
