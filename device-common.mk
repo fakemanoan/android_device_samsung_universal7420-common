@@ -20,6 +20,10 @@ COMMON_PATH := device/samsung/universal7420-common
 PRODUCT_PACKAGES += \
     AdvancedDisplay 
 
+# Additional native libraries
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
 # Audio
 PRODUCT_PACKAGES += \
 	audio.a2dp.default \
