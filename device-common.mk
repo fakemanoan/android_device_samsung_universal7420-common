@@ -16,6 +16,10 @@
 
 COMMON_PATH := device/samsung/universal7420-common
 
+# AdvancedDisplay (MDNIE)
+PRODUCT_PACKAGES += \
+    AdvancedDisplay 
+
 # Audio
 PRODUCT_PACKAGES += \
 	audio.a2dp.default \
