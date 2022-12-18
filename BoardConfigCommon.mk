@@ -77,6 +77,9 @@ BACKLIGHT_PATH := "/sys/class/backlight/panel/brightness"
 # Vendor separation
 TARGET_COPY_OUT_VENDOR := system/vendor
 
+# SECComp filters
+BOARD_SECCOMP_POLICY += $(COMMON_PATH)/seccomp
+
 # Wifi
 TARGET_USES_64_BIT_BCMDHD        := true
 BOARD_WLAN_DEVICE                := bcmdhd
