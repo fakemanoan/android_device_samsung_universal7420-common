@@ -176,6 +176,11 @@ PRODUCT_PACKAGES += \
 # Properties
 -include $(COMMON_PATH)/system_prop.mk
 	
+# OMX
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-impl \
+    android.hardware.media.omx@1.0-service
+	
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 
