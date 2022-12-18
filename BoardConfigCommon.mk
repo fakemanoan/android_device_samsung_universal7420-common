@@ -80,6 +80,9 @@ BACKLIGHT_PATH := "/sys/class/backlight/panel/brightness"
 # Vendor separation
 TARGET_COPY_OUT_VENDOR := system/vendor
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/ramdisk/etc/fstab.samsungexynos7420
+
 # SECComp filters
 BOARD_SECCOMP_POLICY += $(COMMON_PATH)/seccomp
 
