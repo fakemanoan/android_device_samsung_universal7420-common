@@ -31,6 +31,8 @@ PRODUCT_PACKAGES += \
 	android.hardware.audio.effect@2.0-impl:32 \
 	android.hardware.audio.effect@2.0-service \
 	libtinycompress
+	
+TARGET_EXCLUDES_AUDIOFX := true
     
 PRODUCT_COPY_FILES += \
 	$(COMMON_PATH)/configs/audio/mixer_paths_0.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/mixer_paths_0.xml \
