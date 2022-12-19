@@ -275,16 +275,17 @@ PRODUCT_PACKAGES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    hostapd \
-    wificond \
-    wifilogd \
-    wlutil \
-    libwpa_client \
-    wpa_supplicant \
-    wpa_supplicant.conf \
-    android.hardware.wifi@1.0 \
-    android.hardware.wifi@1.0-impl \
-    android.hardware.wifi@1.0-service.legacy
+	hostapd \
+	wificond \
+	wifilogd \
+	wlutil \
+	libwpa_client \
+	wpa_supplicant \
+	wpa_supplicant.conf \
+	TetheringConfigOverlay \
+	android.hardware.wifi@1.0 \
+	android.hardware.wifi@1.0-impl \
+	android.hardware.wifi@1.0-service.legacy
 
 # call the proprietary setup
 $(call inherit-product, vendor/samsung/universal7420-common/universal7420-common-vendor.mk)
