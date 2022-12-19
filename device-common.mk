@@ -31,7 +31,7 @@ PRODUCT_PACKAGES += \
 	audio.r_submix.default \
 	audio.primary.universal7420_32 \
 	android.hardware.audio@2.0-impl:32 \
-	android.hardware.audio@2.0-service \
+	android.hardware.audio.service \
 	android.hardware.audio.effect@2.0-impl:32 \
 	android.hardware.audio.effect@2.0-service \
 	audio.bluetooth.default \
