@@ -79,6 +79,10 @@ TARGET_SEC_FP_CALL_NOTIFY_ON_CANCEL := true
 TARGET_SEC_FP_CALL_CANCEL_ON_ENROLL_COMPLETION := true
 TARGET_SEC_FP_USES_PERCENTAGE_SAMPLES := true
 
+# Fingerprint-shims
+TARGET_LD_SHIM_LIBS += \
+	/system/lib64/libbauthserver.so|/vendor/lib64/libbauthtzcommon_shim.so
+
 # Graphics
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 
