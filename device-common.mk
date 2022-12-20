@@ -233,6 +233,18 @@ DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 PRODUCT_PACKAGES += \
 	android.hardware.power@1.0-service.exynos
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+	init.baseband.rc \
+	init.samsung.rc \
+	init.samsungexynos7420.rc \
+	init.samsungexynos7420.usb.rc \
+	init.wifi.rc \
+	init.gps.rc \
+	init.usb.rc \
+	ueventd.samsungexynos7420.rc \
+	fstab.samsungexynos7420
+
 # Radio
 PRODUCT_PACKAGES += \
 	libxml2 \
