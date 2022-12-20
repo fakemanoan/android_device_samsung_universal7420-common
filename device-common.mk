@@ -62,6 +62,10 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service
 
+# Camera-Shim
+PRODUCT_PACKAGES += \
+	libexynoscamera_shim
+
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-impl \

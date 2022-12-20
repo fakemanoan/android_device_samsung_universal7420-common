@@ -64,6 +64,11 @@ TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 TARGET_BOOTLOADER_BOARD_NAME := universal7420
 TARGET_NO_BOOTLOADER := true
 
+# Camera-shims
+TARGET_LD_SHIM_LIBS += \
+	/system/lib/libexynoscamera.so|/vendor/lib/libexynoscamera_shim.so \
+	/system/lib64/libexynoscamera.so|/vendor/lib64/libexynoscamera_shim.so
+
 # Charger
 WITH_LINEAGE_CHARGER := false
 BOARD_BATTERY_DEVICE_NAME := battery
