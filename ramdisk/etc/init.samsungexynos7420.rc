@@ -21,6 +21,8 @@ on init
 
     symlink /dev/block/platform/15570000.ufs/by-name/STEADY /dev/block/steady
     symlink /dev/block/platform/15570000.ufs/by-name/PERSISTENT /dev/block/persistent
+	
+	setprop ro.boot.hardware.revision ${ro.boot.hw_rev}
 
 on post-fs-data
     mkdir /data/media 0770 media_rw media_rw
