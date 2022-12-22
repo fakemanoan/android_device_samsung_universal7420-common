@@ -34,6 +34,12 @@ on init
     chown system system /sys/class/sec/sec_hw_param/ddr_info
     chmod 0600 /sys/class/sec/sec_hw_param/ddr_info
 
+	# Vibrator
+    chown system system /sys/class/timed_output/vibrator/enable
+    chown system system /sys/class/timed_output/vibrator/intensity
+    chmod 0660 /sys/class/timed_output/vibrator/enable
+    chmod 0660 /sys/class/timed_output/vibrator/intensity
+
 on post-fs
     # mobicore
     setprop sys.mobicoredaemon.enable stopped
@@ -517,8 +523,6 @@ on boot
 #Meta event
     chown system radio /sys/class/sensors/sensor_dev/flush
 
-    chown system system /sys/class/timed_output/vibrator/enable
-    chown system system /sys/class/timed_output/vibrator/intensity
     chown system system /sys/class/timed_output/vibrator/multi_freq
     chown system system /sys/class/leds/keyboard-backlight/brightness
     chown system system /sys/class/leds/lcd-backlight/brightness

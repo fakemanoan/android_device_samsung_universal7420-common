@@ -1,8 +1,8 @@
-import init.samsungexynos7420.usb.rc
-import init.wifi.rc
-import init.baseband.rc
-import init.samsung.rc
-import init.gps.rc
+import /vendor/etc/init/hw/init.samsungexynos7420.usb.rc
+import /vendor/etc/init/hw/init.wifi.rc
+import /vendor/etc/init/hw/init.baseband.rc
+import /vendor/etc/init/hw/init.samsung.rc
+import /vendor/etc/init/hw/init.gps.rc
 
 on early-init
     mount debugfs /sys/kernel/debug /sys/kernel/debug
@@ -400,7 +400,7 @@ on boot
     setprop ro.mst.support 1
 
 on fs
-    mount_all /fstab.samsungexynos7420
+    mount_all /vendor/etc/fstab.samsungexynos7420
     setprop ro.crypto.fuse_sdcard true
 
     #For Absolute Persistence Partition
