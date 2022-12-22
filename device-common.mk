@@ -275,6 +275,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	android.hardware.sensors@1.0-impl.samsung
 
+# Sensors / GPS
+PRODUCT_COPY_FILES += \
+	$(COMMON_PATH)/configs/gps/gps.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/gps.xml \
+	$(COMMON_PATH)/configs/gps/lhd.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/lhd.conf
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
 
