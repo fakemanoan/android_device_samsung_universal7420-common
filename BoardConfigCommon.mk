@@ -227,6 +227,7 @@ TARGET_COPY_OUT_VENDOR := system/vendor
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/ramdisk/etc/fstab.samsungexynos7420
 
 # Radio
+BOARD_MODEM_TYPE := ss333
 BOARD_PROVIDES_LIBRIL := true
 
 # Root extra folders
