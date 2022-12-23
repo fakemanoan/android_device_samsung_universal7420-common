@@ -38,6 +38,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
+	ro.hardware.egl=mali \
+	debug.slsi_platform=1 \
+	debug.sf.latch_unsignaled=1 \
+	debug.hwc.winupdate=1 \
+	ro.sf.blurs_are_expensive=1 \
+	ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 	ro.opengles.version=196610 \
 	ro.sf.lcd_density=560 
 	
