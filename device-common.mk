@@ -63,6 +63,16 @@ TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
+
+# BSP
+PRODUCT_PACKAGES += \
+	gralloc.exynos5 \
+	memtrack.exynos5 \
+	hwcomposer.exynos5 \
+	libion \
+	libhwc2on1adapter \
+    	libhwc2onfbadapter \
+	libfimg
     
 # Camera
 PRODUCT_PACKAGES += \
@@ -325,6 +335,10 @@ PRODUCT_PACKAGES += \
 	android.hardware.wifi@1.0 \
 	android.hardware.wifi@1.0-impl \
 	android.hardware.wifi@1.0-service.legacy
+
+# call Samsung LSI board support package
+$(call inherit-product, hardware/samsung_slsi/exynos5/exynos5.mk)
+$(call inherit-product, hardware/samsung_slsi/exynos7420/exynos7420.mk)
 
 # call the proprietary setup
 $(call inherit-product, vendor/samsung/universal7420-common/universal7420-common-vendor.mk)
