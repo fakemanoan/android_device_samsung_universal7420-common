@@ -64,7 +64,7 @@ PRODUCT_COPY_FILES += \
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+	$(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # AdvancedDisplay (MDNIE)
 PRODUCT_PACKAGES += \
@@ -300,6 +300,11 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 # Stagefright-shims
 PRODUCT_PACKAGES += \
 	libstagefright_shim
+
+# Task profiles
+PRODUCT_COPY_FILES += \
+	system/core/libprocessgroup/profiles/cgroups_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
+	system/core/libprocessgroup/profiles/task_profiles_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
 # Touch
 PRODUCT_PACKAGES += \
