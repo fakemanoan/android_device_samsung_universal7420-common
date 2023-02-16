@@ -111,12 +111,6 @@ BOARD_USE_NON_CACHED_GRAPHICBUFFER := true
 # (G)SCALER
 BOARD_USES_SCALER := true
 
-# Graphics
-USE_OPENGL_RENDERER := true
-
-# Gralloc
-TARGET_USES_GRALLOC1_ADAPTER := true
-
 # HIDL
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
@@ -129,9 +123,6 @@ BOARD_HDMI_INCAPABLE := true
 
 # HWCServices - requires framework support
 # BOARD_USES_HWC_SERVICES := true
-
-# Mixer
-BOARD_USE_BGRA_8888 := true
 
 #  ION
 TARGET_USES_ION := true
