@@ -144,7 +144,6 @@ BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
 BOARD_KERNEL_SEPARATED_DT := true
 TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
 TARGET_KERNEL_CLANG_COMPILE := false
-BOARD_RAMDISK_USE_XZ := true
 BOARD_USES_FULL_RECOVERY_IMAGE := false
 
 # Keymaster
@@ -182,8 +181,7 @@ TARGET_LD_SHIM_LIBS += \
 	/vendor/lib/libsec-ril.so|/vendor/lib/libcutils_shim.so \
 	/vendor/lib/libsec-ril-dsds.so|/vendor/lib/libcutils_shim.so \
 	/vendor/lib64/libsec-ril.so|/vendor/lib64/libcutils_shim.so \
-	/vendor/lib64/libsec-ril-dsds.so|/vendor/lib64/libcutils_shim.so \
-	/system/bin/gpsd|/vendor/lib64/gpsd_shim.so
+	/vendor/lib64/libsec-ril-dsds.so|/vendor/lib64/libcutils_shim.so
 
 # Root extra folders
 BOARD_ROOT_EXTRA_FOLDERS += efs
