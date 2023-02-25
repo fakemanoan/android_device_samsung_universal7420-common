@@ -144,6 +144,7 @@ BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
 BOARD_KERNEL_SEPARATED_DT := true
 TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
 TARGET_KERNEL_CLANG_COMPILE := false
+BOARD_RAMDISK_USE_XZ := true
 BOARD_USES_FULL_RECOVERY_IMAGE := false
 
 # Keymaster
