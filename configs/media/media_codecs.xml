@@ -82,7 +82,6 @@ Only the three quirks included above are recognized at this point:
         <Setting name="supports-multiple-secure-codecs" value="true" />
         <Setting name="supports-secure-with-non-secure-codec" value="true" />
         <Setting name="max-video-encoder-input-buffers" value="9" />
-        <Variant name="slow-cpu" enabled="true" />
     </Settings>
     <Decoders>
         <MediaCodec name="OMX.Exynos.mpeg4.dec" type="video/mp4v-es" >
@@ -173,8 +172,10 @@ Only the three quirks included above are recognized at this point:
             <Limit name="blocks-per-second" min="1" max="979200" />
             <Limit name="bitrate" range="1-60000000" />
             <Limit name="concurrent-instances" max="16" />
+            <Feature name="secure-playback" required="true" />
             <Feature name="adaptive-playback" />
         </MediaCodec>
+
         <MediaCodec name="OMX.google.opus.decoder" type="audio/opus" update="true" rank="100"/>
     </Decoders>
 
