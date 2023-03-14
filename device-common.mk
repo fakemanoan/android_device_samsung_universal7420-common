@@ -162,8 +162,7 @@ PRODUCT_PACKAGES += \
 # GNSS
 PRODUCT_PACKAGES += \
 	android.hardware.gnss@1.0-impl.universal7420 \
-	android.hardware.gnss@1.0-service.universal7420 \
-	gpsd_shim
+	android.hardware.gnss@1.0-service.universal7420
 	
 
 PRODUCT_COPY_FILES += \
@@ -238,7 +237,7 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    device/samsung/universal7420-common/overlay/hardware/samsung/AdvancedDisplay
+	device/samsung/universal7420-common/overlay/hardware/samsung/AdvancedDisplay
 
 # OMX
 PRODUCT_PACKAGES += \
