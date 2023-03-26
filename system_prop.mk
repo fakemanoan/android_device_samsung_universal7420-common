@@ -107,6 +107,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	debug.slsi_platform=1
 
 #
+# Keystore
+#
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.hardware.keystore=mdfpp
+
+#
 # Audio
 #
 PRODUCT_PROPERTY_OVERRIDES += \
