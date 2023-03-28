@@ -84,48 +84,17 @@ TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/ramdisk/etc/fstab.samsungexynos7420.recov
 # Display
 TARGET_SCREEN_DENSITY := 560
 
-# Device Tree
-BOARD_USES_DT := true
-
 # DEX pre-optimizations
 WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := false
 WITH_DEXPREOPT := true
-
-# FIMG2D
-BOARD_USES_SKIA_FIMGAPI := true
-BOARD_USES_FIMGAPI_V5X := true
 
 # Fingerprint
 TARGET_SEC_FP_CALL_NOTIFY_ON_CANCEL := true
 TARGET_SEC_FP_CALL_CANCEL_ON_ENROLL_COMPLETION := true
 TARGET_SEC_FP_USES_PERCENTAGE_SAMPLES := true
 
-# Gralloc
-BOARD_USES_EXYNOS7420_GRALLOC := true
-
-##
-## Samsung LSI Graphics
-##
-### Buffers
-BOARD_USE_ANB_OUTBUF_SHARE := true
-BOARD_USE_IMPROVED_BUFFER := true
-BOARD_USE_NON_CACHED_GRAPHICBUFFER := true
-
-# (G)SCALER
-BOARD_USES_SCALER := true
-
 # HIDL
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
-
-# HWComposer
-BOARD_USES_VPP := true
-BOARD_HDMI_INCAPABLE := true
-
-# HWCServices - requires framework support
-BOARD_USES_HWC_SERVICES := true
-
-#  ION
-TARGET_USES_ION := true
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
@@ -146,9 +115,6 @@ TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
 TARGET_KERNEL_CLANG_COMPILE := false
 BOARD_RAMDISK_USE_XZ := true
 BOARD_USES_FULL_RECOVERY_IMAGE := false
-
-# Keymaster
-BOARD_USES_TRUST_KEYMASTER := true
 
 # Mediaserver-shim
 TARGET_LD_SHIM_LIBS += \
@@ -173,20 +139,44 @@ TARGET_BOARD_PLATFORM := exynos5
 TARGET_SOC := exynos7420
 TARGET_SLSI_VARIANT := bsp
 
-# Radio
-BOARD_MODEM_TYPE := ss333
-BOARD_PROVIDES_LIBRIL := true
+#
+# BSP Flags
+#
 
-# Ril - Shim
-TARGET_LD_SHIM_LIBS += \
-	/vendor/lib/libsec-ril.so|/vendor/lib/libcutils_shim.so \
-	/vendor/lib/libsec-ril-dsds.so|/vendor/lib/libcutils_shim.so \
-	/vendor/lib64/libsec-ril.so|/vendor/lib64/libcutils_shim.so \
-	/vendor/lib64/libsec-ril-dsds.so|/vendor/lib64/libcutils_shim.so
+# HWComposer
+BOARD_USES_VPP := true
+BOARD_HDMI_INCAPABLE := true
 
-# Root extra folders
-BOARD_ROOT_EXTRA_FOLDERS += efs
-TARGET_FS_CONFIG_GEN := $(LOCAL_PATH)/config.fs
+# HWCServices - requires framework support
+BOARD_USES_HWC_SERVICES := true
+
+# hwjpeg
+TARGET_USES_UNIVERSAL_LIBHWJPEG := true
+
+#  ION
+TARGET_USES_ION := true
+
+# Gralloc
+BOARD_USES_EXYNOS7420_GRALLOC := true
+
+# FIMG2D
+BOARD_USES_SKIA_FIMGAPI := true
+BOARD_USES_FIMGAPI_V5X := true
+
+# Device Tree
+BOARD_USES_DT := true
+
+# Keymaster
+BOARD_USES_TRUST_KEYMASTER := true
+
+# Samsung LSI Graphics
+### Buffers
+BOARD_USE_ANB_OUTBUF_SHARE := true
+BOARD_USE_IMPROVED_BUFFER := true
+BOARD_USE_NON_CACHED_GRAPHICBUFFER := true
+
+# (G)SCALER
+BOARD_USES_SCALER := true
 
 # Samsung OpenMAX Video
 BOARD_USE_STOREMETADATA := true
@@ -222,6 +212,25 @@ BOARD_USES_VDS_BGRA8888 := true
 #BOARD_USES_VIRTUAL_DISPLAY_DECON_EXT_WB := true
 BOARD_VIRTUAL_DISPLAY_DISABLE_IDMA_G0 := false
 BOARD_USES_CEC := true
+
+#
+# END OF BSP
+#
+
+# Radio
+BOARD_MODEM_TYPE := ss333
+BOARD_PROVIDES_LIBRIL := true
+
+# Ril - Shim
+TARGET_LD_SHIM_LIBS += \
+	/vendor/lib/libsec-ril.so|/vendor/lib/libcutils_shim.so \
+	/vendor/lib/libsec-ril-dsds.so|/vendor/lib/libcutils_shim.so \
+	/vendor/lib64/libsec-ril.so|/vendor/lib64/libcutils_shim.so \
+	/vendor/lib64/libsec-ril-dsds.so|/vendor/lib64/libcutils_shim.so
+
+# Root extra folders
+BOARD_ROOT_EXTRA_FOLDERS += efs
+TARGET_FS_CONFIG_GEN := $(LOCAL_PATH)/config.fs
 
 # Use these flags if the board has a ext4 partition larger than 2gb
 BOARD_HAS_LARGE_FILESYSTEM := true
