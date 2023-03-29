@@ -62,6 +62,10 @@ vendor/firmware/bcm4358A3_V0083.0138_wisol.hcd|e3f2205f0afa2d269f1bad80e27806919
 # Camera
 lib/hw/camera.vendor.exynos5.so
 lib64/hw/camera.vendor.exynos5.so
+lib/libexynoscamera.so
+lib64/libexynoscamera.so
+lib/libexynoscamera3.so
+lib64/libexynoscamera3.so
 lib/libhwjpeg.so
 lib64/libhwjpeg.so
 lib/libuniplugin.so
@@ -85,16 +89,10 @@ vendor/firmware/setfile_4e6.bin
 vendor/firmware/setfile_6b2.bin
 vendor/firmware/setfile_imx240.bin
 
-# Hexedited for newer Gralloc (r22p)
-lib/libexynoscamera.so
-lib64/libexynoscamera.so
-lib/libexynoscamera3.so
-lib64/libexynoscamera3.so
-
 # Cpboot daemon
 bin/cbd
 
-# Graphics - taken from A810F - R22P0 graphics
+# Graphics
 vendor/lib/egl/libGLES_mali.so
 vendor/lib64/egl/libGLES_mali.so
 
@@ -105,34 +103,6 @@ lib64/hw/consumerir.exynos5.so
 # NFC
 etc/nfc/sec_s3fwrn5p_rfreg.bin
 vendor/firmware/nfc/sec_s3fwrn5p_firmware.bin
-
-# OMX - taken from A810F - new Gralloc requires them (r22p0)
-lib/libExynosOMX_Core.so
-lib/libExynosOMX_Resourcemanager.so
-lib/libstagefrighthw.so
-lib/omx/libOMX.Exynos.AVC.Decoder.so
-lib/omx/libOMX.Exynos.AVC.Encoder.so
-lib/omx/libOMX.Exynos.HEVC.Decoder.so
-lib/omx/libOMX.Exynos.HEVC.Encoder.so
-lib/omx/libOMX.Exynos.MPEG4.Decoder.so
-lib/omx/libOMX.Exynos.MPEG4.Encoder.so
-lib/omx/libOMX.Exynos.VP8.Decoder.so
-lib/omx/libOMX.Exynos.VP8.Encoder.so
-lib/omx/libOMX.Exynos.VP9.Decoder.so
-lib/omx/libOMX.Exynos.WMV.Decoder.so
-lib64/libExynosOMX_Core.so
-lib64/libExynosOMX_Resourcemanager.so
-lib64/libstagefrighthw.so
-lib64/omx/libOMX.Exynos.AVC.Decoder.so
-lib64/omx/libOMX.Exynos.AVC.Encoder.so
-lib64/omx/libOMX.Exynos.HEVC.Decoder.so
-lib64/omx/libOMX.Exynos.HEVC.Encoder.so
-lib64/omx/libOMX.Exynos.MPEG4.Decoder.so
-lib64/omx/libOMX.Exynos.MPEG4.Encoder.so
-lib64/omx/libOMX.Exynos.VP8.Decoder.so
-lib64/omx/libOMX.Exynos.VP8.Encoder.so
-lib64/omx/libOMX.Exynos.VP9.Decoder.so
-lib64/omx/libOMX.Exynos.WMV.Decoder.so
 
 # Sensors
 bin/gps.cer
@@ -146,6 +116,15 @@ lib/libsensorlistener.so
 lib64/libsensorlistener.so
 lib/libwrappergps.so
 lib64/libwrappergps.so
+
+# Gatekeeper MDFPP - taken from A810F
+vendor/lib/hw/gatekeeper.universal7420.so
+vendor/lib64/hw/gatekeeper.universal7420.so
+vendor/lib64/hw/keystore.mdfpp.so
+vendor/lib64/libkeymaster_helper.so
+vendor/lib64/libkeymaster_mdfpp.so
+vendor/lib64/libskeymaster.so
+vendor/lib64/vendor.samsung.security.skeymaster@3.0.so
 
 # GPS - Taken from G920FXXU6EVG1 stock firmware to fix rollover
 bin/gpsd
@@ -188,3 +167,10 @@ product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 # Heart Rate monitor / SPO2
 lib64/libhr.so
 lib64/libagc_max.so
+
+# Widevine DRM (L3) - from greatlte
+bin/move_widevine_data.sh
+vendor/bin/hw/android.hardware.drm@1.1-service.widevine
+vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
+vendor/lib/libwvhidl.so
+vendor/lib/mediadrm/libwvdrmengine.so
