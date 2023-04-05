@@ -131,6 +131,34 @@ bin/gpsd
 bin/lhd
 lib64/hw/gps.default.so
 
+# OMX - taken from nx-10.0 branch from Exynos7420 (BSP built)
+lib/libExynosOMX_Core.so
+lib/libExynosOMX_Resourcemanager.so
+lib/libstagefrighthw.so
+lib/omx/libOMX.Exynos.AVC.Decoder.so
+lib/omx/libOMX.Exynos.AVC.Encoder.so
+lib/omx/libOMX.Exynos.HEVC.Decoder.so
+lib/omx/libOMX.Exynos.HEVC.Encoder.so
+lib/omx/libOMX.Exynos.MPEG4.Decoder.so
+lib/omx/libOMX.Exynos.MPEG4.Encoder.so
+lib/omx/libOMX.Exynos.VP8.Decoder.so
+lib/omx/libOMX.Exynos.VP8.Encoder.so
+lib/omx/libOMX.Exynos.VP9.Decoder.so
+lib/omx/libOMX.Exynos.WMV.Decoder.so
+lib64/libExynosOMX_Core.so
+lib64/libExynosOMX_Resourcemanager.so
+lib64/libstagefrighthw.so
+lib64/omx/libOMX.Exynos.AVC.Decoder.so
+lib64/omx/libOMX.Exynos.AVC.Encoder.so
+lib64/omx/libOMX.Exynos.HEVC.Decoder.so
+lib64/omx/libOMX.Exynos.HEVC.Encoder.so
+lib64/omx/libOMX.Exynos.MPEG4.Decoder.so
+lib64/omx/libOMX.Exynos.MPEG4.Encoder.so
+lib64/omx/libOMX.Exynos.VP8.Decoder.so
+lib64/omx/libOMX.Exynos.VP8.Encoder.so
+lib64/omx/libOMX.Exynos.VP9.Decoder.so
+lib64/omx/libOMX.Exynos.WMV.Decoder.so
+
 # Wi-Fi
 etc/wifi/bcmdhd_apsta.bin:vendor/etc/wifi/bcmdhd_apsta.bin
 etc/wifi/bcmdhd_apsta.bin_a1:vendor/etc/wifi/bcmdhd_apsta.bin_a1
