@@ -104,6 +104,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.lineage.build.vendor_security_patch=2021-09-01
 
+# LKMD
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.lmk.log_stats=true \
+	ro.lmk.use_minfree_levels=true \
+	ro.lmk.use_psi=false
+
 # Wi-Fi
 PRODUCT_PROPERTY_OVERRIDES += \
 	wifi.interface=wlan0 \
