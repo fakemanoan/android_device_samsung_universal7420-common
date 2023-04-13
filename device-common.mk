@@ -277,6 +277,10 @@ PRODUCT_PACKAGES += \
 	rild
 	
 PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/configs/ril/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml \
+	$(LOCAL_PATH)/configs/ril/spn-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/spn-conf.xml
+	
+PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/init/rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rild.rc
 
 # Ramdisk
