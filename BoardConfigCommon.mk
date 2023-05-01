@@ -173,6 +173,9 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 # Vendor separation
 TARGET_COPY_OUT_VENDOR := system/vendor
 
+# SECComp filters
+BOARD_SECCOMP_POLICY += $(LOCAL_PATH)/seccomp
+
 # Wifi
 BOARD_HAVE_SAMSUNG_WIFI          := true
 BOARD_WLAN_DEVICE                := bcmdhd
