@@ -120,6 +120,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # System
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.sys.binary_xml=false
+	
+# VNDK
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.vndk.version=current
 
 # BPF
 PRODUCT_PROPERTY_OVERRIDES += \
