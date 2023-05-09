@@ -254,7 +254,20 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 # OMX
 PRODUCT_PACKAGES += \
 	android.hardware.media.omx@1.0-impl \
-	android.hardware.media.omx@1.0-service
+	android.hardware.media.omx@1.0-service \
+	libstagefrighthw \
+	libExynosOMX_Core \
+	libExynosOMX_Resourcemanager \
+	libOMX.Exynos.AVC.Decoder \
+	libOMX.Exynos.AVC.Encoder \
+	libOMX.Exynos.HEVC.Decoder \
+	libOMX.Exynos.HEVC.Encoder \
+	libOMX.Exynos.MPEG4.Decoder \
+	libOMX.Exynos.MPEG4.Encoder \
+	libOMX.Exynos.VP8.Decoder \
+	libOMX.Exynos.VP8.Encoder \
+	libOMX.Exynos.VP9.Decoder \
+	libOMX.Exynos.WMV.Decoder
 
 # Power
 PRODUCT_PACKAGES += \
