@@ -117,7 +117,9 @@ BOARD_USES_FULL_RECOVERY_IMAGE := false
 
 # Mediaserver-shim
 TARGET_LD_SHIM_LIBS += \
-    /system/bin/mediaserver|/vendor/lib/libstagefright_shim.so
+    /system/bin/mediaserver|/vendor/lib/libstagefright_shim.so \
+    /system/lib/libstagefright.so|/vendor/lib/libstagefright_shim.so \
+    /system/lib64/libstagefright.so|/vendor/lib64/libstagefright_shim.so \
 
 # MEMFD
 TARGET_HAS_MEMFD_BACKPORT := true
