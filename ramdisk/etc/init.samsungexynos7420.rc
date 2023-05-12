@@ -201,7 +201,7 @@ on boot
     write /sys/power/enable_dm_hotplug 0
     
     # Use higher control-temperature for IPA (default: 45)
-    write /sys/power/ipa/control_temp 50
+    write /sys/power/ipa/control_temp 65
 
     #setprop ro.radio.noril yes
 
